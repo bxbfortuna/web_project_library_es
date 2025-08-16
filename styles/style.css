@@ -42,25 +42,25 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin-top: 128px;
   flex-wrap: wrap;
+  height: 100%;
 }
 
 .header__title {
   font-size: 62px;
   line-height: 76px;
   font-weight: 500;
-  margin-bottom: 32px;
   max-width: 635px;
   margin-top: 128px;
 }
 
 .header__description {
   font-size: 20px;
+  justify-self: left;
   line-height: 30px;
-  margin: 0;
+  margin-top: 32px;
   max-width: 515px;
-  margin-top: 18px;
+  margin-top: 32px;
 }
 
 .header__image {
@@ -121,7 +121,7 @@
   line-height: 30px;
   font-weight: 400;
   margin: 0;
-  padding-bottom: 68px;
+  padding-bottom: 0;
 }
 .staff__cards {
   list-style-type: none;
