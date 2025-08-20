@@ -283,7 +283,7 @@
 .person_name_feynman {
   margin: 0;
   top: -30px;
-  right: 319px;
+  left: 319px;
 }
 
 .person_name_burbidge {
@@ -309,7 +309,7 @@
   top: 79px;
   left: 159px;
 }
-.person .person_image {
+.person__image {
   max-width: 100%;
   display: block;
   border-radius: 50%;
