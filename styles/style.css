@@ -189,3 +189,175 @@
   line-height: 20px;
   color: #838383;
 }
+.events {
+  padding: 100px 0 120px 80px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+}
+
+.events__content {
+  flex-basis: 580px;
+}
+
+.events__heading {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  margin: 0;
+}
+
+.events__title {
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 52px;
+  margin: 32px 0 0;
+}
+
+.events__info-section {
+  margin-top: 32px;
+}
+
+.event-info__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.event-info__icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 12px;
+  width: 24px;
+  height: 24px;
+}
+
+.event-info__text {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  margin: 0;
+}
+
+.events__description {
+  margin: 40px 0 60px;
+}
+
+.events__more {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.events__cover {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 780px;
+  max-width: 780px;
+  position: relative;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.events__image {
+  max-width: 100%;
+  display: block;
+  position: relative;
+  z-index: 1;
+  align-self: baseline;
+  margin-top: -30px;
+}
+
+.person {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.person_name_feynman {
+  margin: 0;
+  top: -30px;
+  right: 319px;
+}
+
+.person_name_burbidge {
+  margin: 0;
+  top: 96px;
+  right: 125px;
+}
+
+.person_name_cannon {
+  margin: 0;
+  bottom: 18px;
+  right: 216px;
+}
+
+.person_name_mitchell {
+  margin: 0;
+  left: 142px;
+  bottom: 82px;
+}
+
+.person_name_tarter {
+  margin: 0;
+  top: 79px;
+  left: 159px;
+}
+.person .person_image {
+  max-width: 100%;
+  display: block;
+  border-radius: 50%;
+  border: 3px solid white;
+  transform-origin: 50% 100%;
+  transition: transform 0.25s ease-in-out;
+  will-change: transform;
+  --scale: 1;
+  transform: translateZ(0) scale(var(--scale));
+}
+
+.person__image_size_l {
+  width: 140px;
+  --scale: 0.68;
+}
+
+.person__image_size_m {
+  width: 100px;
+  --scale: 0.62;
+}
+
+.person__image_size_s {
+  width: 80px;
+  --scale: 0.55;
+}
+.person_name_feynman .person__caption,
+.person_name_burbidge .person__caption,
+.person_name_tarter .person__caption {
+  order: -1;
+}
+.person:hover .person_image {
+  transform: scale(1.25);
+}
+.person:hover .person_image__size_s {
+  --scale: calc(0.55 * 1.25);
+}
+.person:hover .person_image__size_m {
+  transform: scale(calc(0.62 * 1.1));
+}
+.person:hover .person_image__size_l {
+  transform: scale(calc(0.68 * 1.05));
+}
+.person__caption {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  color: #000;
+  position: relative;
+  order: 1;
+}
