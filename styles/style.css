@@ -433,7 +433,7 @@
   gap: 80px;
   align-self: flex-end;
 }
-.footer__column_content {
+.footer__columns_container {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
