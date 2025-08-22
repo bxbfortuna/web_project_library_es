@@ -418,7 +418,7 @@
 }
 
 .footer {
-  background-color: #000;
+  background-color: #1f1f1f;
   color: white;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -467,6 +467,7 @@
   position: relative;
   left: 0px;
   padding-left: 200px;
+  margin-left: auto;
 }
 
 .footer__column_content_social {
@@ -479,6 +480,7 @@
   position: relative;
   margin-right: 80px;
   padding-right: 0px;
+  margin-left: 80px;
 }
 
 .footer__logo {
